@@ -4,8 +4,6 @@ class Ktrai < Formula
   version "0.0.0"
   license "MIT"
 
-  depends_on "universal-ctags" => :recommended
-
   def install
     # Populated automatically by GoReleaser on first release
   end
