@@ -5,6 +5,5 @@ Personal Homebrew tap for [ktrai](https://github.com/kennytrytek/ktrai).
 ## Install
 
 ```sh
-brew tap kennytrytek/tap
-brew install ktrai
+brew install kennytrytek/tap/ktrai
 ```
