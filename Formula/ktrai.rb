@@ -6,21 +6,21 @@ class Ktrai < Formula
   desc "AI agent context scaffolding for software repositories. Installs a .agent/ layout with AGENTS.md, ctags-driven symbol index, and Cursor + Claude rule symlinks.
 "
   homepage "https://github.com/kennytrytek/ktrai"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kennytrytek/ktrai/releases/download/v0.6.0/ktrai_0.6.0_darwin_amd64.tar.gz"
-      sha256 "1a2cead2a4a3e5e917923334a2086b6656c908ccfe5f329977aa684a2959d60b"
+      url "https://github.com/kennytrytek/ktrai/releases/download/v0.6.1/ktrai_0.6.1_darwin_amd64.tar.gz"
+      sha256 "4c9d6d3c53501783f4454cc844d065cc7427e1e7fe65c0544083d92b971f59c7"
 
       define_method(:install) do
         bin.install "ktrai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kennytrytek/ktrai/releases/download/v0.6.0/ktrai_0.6.0_darwin_arm64.tar.gz"
-      sha256 "980158c5b0fb4b6529b01ccb9d31d58321ad8acb649fa92b1263cf320964ce9a"
+      url "https://github.com/kennytrytek/ktrai/releases/download/v0.6.1/ktrai_0.6.1_darwin_arm64.tar.gz"
+      sha256 "9851b775ea88dd6a516527961106bef9493723d00834804f77f17252ef55fda3"
 
       define_method(:install) do
         bin.install "ktrai"
@@ -30,15 +30,15 @@ class Ktrai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kennytrytek/ktrai/releases/download/v0.6.0/ktrai_0.6.0_linux_amd64.tar.gz"
-      sha256 "4044499d09afc0e99e2198604ddc47b63efa1100e33cb8038d867bacc5889642"
+      url "https://github.com/kennytrytek/ktrai/releases/download/v0.6.1/ktrai_0.6.1_linux_amd64.tar.gz"
+      sha256 "742570d4f264330a2e9728c9ff096c09c0a41a900282a18225832908bc101902"
       define_method(:install) do
         bin.install "ktrai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kennytrytek/ktrai/releases/download/v0.6.0/ktrai_0.6.0_linux_arm64.tar.gz"
-      sha256 "2acea25c9eba765d949da4bf3c726800e2f60eb40c34be57132a03e4854edf14"
+      url "https://github.com/kennytrytek/ktrai/releases/download/v0.6.1/ktrai_0.6.1_linux_arm64.tar.gz"
+      sha256 "25d4c44533bc038c079837a5106bb69051a1ea8ca951ad281514b6b21338d561"
       define_method(:install) do
         bin.install "ktrai"
       end
